@@ -18,7 +18,6 @@ class ItemsController < ApplicationController
     def destroy
         destroy_item=Item.find_by(id:params[:id])
         destroy_item.destroy
-        head: no_content
     end
 
     private
