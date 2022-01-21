@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     include ActionController::Cookies
 
   def fallback_index
-    render 'public/index.html'
+    render template: '/public/index.html'
   end
 
 
