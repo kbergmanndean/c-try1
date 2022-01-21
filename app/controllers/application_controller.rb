@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     include ActionController::Cookies
 
   def fallback_index
-    render file: Rails.root.join('app/client/public/index.html')
+    render Rails.root.join('/client/public/index.html')
   end
 
 
