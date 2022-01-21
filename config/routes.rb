@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root 'application#fallback_index'
+  root 'application#fallback_index'
   resources :items, only: [:index, :show, :create, :destroy]
   resources :users, only: [:index, :show]
   post "/login", to: "sessions#create"
