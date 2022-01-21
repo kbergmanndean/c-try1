@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
     include ActionController::Cookies
 
-  def fallback_index_
+  def fallback_index
     render :file => 'public/index.html'
   end
 
