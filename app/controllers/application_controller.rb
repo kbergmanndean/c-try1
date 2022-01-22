@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
     include ActionController::Cookies
 
-  def fallback_index
-    render file:'/Users/kaiabd/momapp/client/public/index.html'
+  def fallback_index_html
+    render :file =>'public/index.html'
     # render template: "application.html.erb"
   end
 
