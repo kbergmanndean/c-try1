@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     # include ActionController::Cookies
 
   def fallback_index_html
-    render :file =>'public/index.html'
+    render :file => Rails.root.join('public', 'index.html')
     # render template: "application.html.erb"
   end
 
